@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import injectContext from "./store/appContext";
 
 // import app components Start
-import ScrollToTop from "./component/scrollToTop";
+import ScrollToTop from "./component/scrolltotop/scrollToTop";
 
 
 const Layout = () => {
