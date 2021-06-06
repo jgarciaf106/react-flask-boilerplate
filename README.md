@@ -1,26 +1,21 @@
 # WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-flask-hello.git)
-
-<p align="center">
-<a href="https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b"><img src="https://github.com/4GeeksAcademy/flask-rest-hello/blob/main/docs/assets/how-to.png?raw=true?raw=true" /></a>
-</p>
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/jgarciaf106/react-flask-boilerplate)
 
 ### Styles
 You can update the `styles/index.scss` or create new `.scss` files inside `styles/` and import them into your current scss or js files depending on your needs.
 
 ### Components
 Add more files into your `./src/js/components` or styles folder as you need them and import them into your current files as needed.
+Use folder per components.
 
-💡Note: There is an example using the Context API inside `views/demo.js`;
-
-### Views (Components)
-Add more files into your `./src/js/views` and import them in `./src/js/layout.jsx`.
+### Pages (Components)
+Add more files into your `./src/js/pages` and import them in `./src/js/layout.jsx`.
+Use folder per page.
 
 ### Context
 This boilerplate comes with a centralized general Context API. The file `./src/js/store/flux.js` has a base structure for the store, we encourage you to change it and adapt it to your needs.
 
 React Context [docs](https://reactjs.org/docs/context.html)
-BreathCode Lesson [view](https://content.breatheco.de/lesson/react-hooks-explained)
 
 The `Provider` is already set. You can consume from any component using the useContext hook to get the `store` and `actions` from the Context. Check `/views/demo.js` to see a demo.
 
@@ -32,6 +27,13 @@ const MyComponentSuper = () => {
   return <div>{/* you can use your actions or store inside the html */}</div>
 }
 ```
+## Features
+
+- Extensive documentation [here](https://github.com/jgarciaf106/react-flask-boilerplate/tree/master/docs/assets).
+- Integrated with Pipenv for package managing.
+- Fast deloyment to heroku with `$ pipenv run deploy`.
+- Use of `.env` file.
+- SQLAlchemy integration for database abstraction.
 
 ### Back-End Manual Installation:
 
@@ -61,4 +63,15 @@ It is recomended to install the backend first, make sure you have Python 3.8, Pi
 
 ## Publish your website!
 
-This boilerplate it's 100% integrated with Herkou, just by pushing your changes to the heroku repository it will deploy: `$ git push heroku main`
+This template is 100% compatible with Heroku[https://www.heroku.com/], just make sure to understand and execute the following steps:
+
+```sh
+// Install heroku
+$ npm i heroku -g
+// Login to heroku on the command line
+$ heroku login -i
+// Create an application (if you don't have it already)
+$ heroku create <your_application_name>
+// Commit and push to heroku (commited your changes)
+$ git push heroku main
+```
