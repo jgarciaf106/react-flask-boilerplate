@@ -3,9 +3,6 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // import app pages Start
-import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
 
 // app Context import
 import injectContext from "./store/appContext";
