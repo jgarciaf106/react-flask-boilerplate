@@ -4,14 +4,14 @@ def blue(_str):
 environment = sys.argv.pop(1)
 if environment == "back":
     print(f"""
-    This terminal will represent your 🐍 backend!
+    This is your 🐍 backend! Terminal
     
-    1. Get inside the environment  {blue("$ pipenv shell")}
-    2. Start the server by typing {blue("$ pipenv run start")}
+    1. Get inside the environment by running {blue("$ pipenv shell")}
+    2. Start the server by running {blue("$ pipenv run start")}
     """)
 if environment == "front":
     print(f"""
-    This terminal is for 💻 front-end!
+    This is your 💻 front-end! Terminal
     
-    1. Start webpack dev server {blue("$ npm run start")}
+    1. Start webpack dev server by running {blue("$ npm run start")}
     """)
