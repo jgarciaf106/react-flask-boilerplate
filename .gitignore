@@ -73,3 +73,8 @@ database.database
 database.db
 diagram.png
 __pycache__/
+
+# ignore 
+tsconfig.json
+tslint.json
+.prettierrc
