@@ -9,17 +9,17 @@ Add more files into your `./src/js/components` or styles folder as you need them
 Use folder per components.
 
 ### Pages (Components)
-Add more files into your `./src/js/pages` and import them in `./src/js/layout.jsx`.
+Add more files into your `./src/js/pages` and import them in `./src/js/layout.tsx`.
 Use folder per page.
 
 ### Context
-This boilerplate comes with a centralized general Context API. The file `./src/js/store/flux.js` has a base structure for the store, we encourage you to change it and adapt it to your needs.
+This boilerplate comes with a centralized general Context API. The file `./src/js/store/flux.tsx` has a base structure for the store, we encourage you to change it and adapt it to your needs.
 
 React Context [docs](https://reactjs.org/docs/context.html)
 
-The `Provider` is already set. You can consume from any component using the useContext hook to get the `store` and `actions` from the Context. Check `/views/demo.js` to see a demo.
+The `Provider` is already set. You can consume from any component using the useContext hook to get the `store` and `actions` from the Context.
 
-```jsx
+```tsx
 import { Context } from "../store/appContext";
 const MyComponentSuper = () => {
   //here you use useContext to get store and actions
