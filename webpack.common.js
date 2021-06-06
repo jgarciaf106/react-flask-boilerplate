@@ -5,7 +5,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: [
-    './src/front/js/index.js'
+    './src/front/js/index.tsx'
   ],
   output: {
     filename: 'bundle.js',
@@ -15,9 +15,10 @@ module.exports = {
   module: {
     rules: [
         {
-          test: /\.(js|jsx)$/,
+          test: /\.(js|jsx|tsx)$/,
           exclude: /node_modules/,
-          use: ['babel-loader', 'eslint-loader']
+          use: ['babel-loader', 'eslint-loader'],
+          loader: 'ts-loader'
         },
         {
           test: /\.(css|scss)$/, use: [{
@@ -38,7 +39,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js']
+    extensions: ['*','.tsx','.ts','.js']
   },
   plugins: [
     new webpack.ProvidePlugin({
