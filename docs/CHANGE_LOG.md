@@ -8,3 +8,4 @@ Here we are tracking the previous and upcoming changes (roadmap), pull request t
 - [x] Changes to the src/js folder to structure components and pages within subfolders.
 - [x] Clean Styles folder to start with only a main .scss file.
 - [x] Clean flux file.
+- [x] Rename DB from example to ODS (Operational Data Storage).
