@@ -1,12 +1,12 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			message: null as string
+			message: null
 		},
 		actions: {
 			exampleFunction: () => {
 				const store = getStore();
-				console.log(store.message);
+				//console.log(store.message);
 			}
 		}
 	};
