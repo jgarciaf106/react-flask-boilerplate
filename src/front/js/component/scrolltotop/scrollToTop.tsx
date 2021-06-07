@@ -2,6 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class ScrollToTop extends React.Component {
+	static propTypes: {
+		location: object,
+		children: any
+	};
 	componentDidUpdate(prevProps) {
 		if (this.props.location !== prevProps.location) {
 			window.scrollTo(0, 0);
