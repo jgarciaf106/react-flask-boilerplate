@@ -1,15 +1,17 @@
-// libreary imports
+// import libraries
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ScrollToTop } from 'react-router-scroll-to-top';
 
-// import app pages Start
+// import app components
 
-// app Context import
+
+// import app pages
+import { Home } from './pages/homepage/home';
+import { FouroFour } from './pages/pagenotfound/fourofour'
+
+// import app Context
 import injectContext from "./store/appContext";
-
-// import app components Start
-
 
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -21,18 +23,12 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 			<ScrollToTop />
 					<Switch>
-						{
-						/* 
-						App routes to exact path
-						<Route exact path="/">
+					<Route exact path="/">
 							<Home />
-						</Route>
-						App route in case page does not exist
-						<Route>
-							<h1>Not found!</h1>
-						</Route> 
-						*/
-						}
+					</Route>						
+					<Route>
+						<FouroFour />
+					</Route> 
 					</Switch>
 			</BrowserRouter>
 		</div>
