@@ -8,7 +8,7 @@
 	"main": "index.tsx",
 	"scripts": {
 		"test": "jest --config jestconfig.json",
-		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.js\"",
 		"lint": "tslint -p tsconfig.json",
 		"start": "webpack-dev-server --config webpack.dev.js --port 3000",
 		"build": "webpack --config webpack.prod.js"
