@@ -13,8 +13,8 @@ tasks:
         (cp -n .env.example .env || true) && 
         echo "" >> .env && echo "BACKEND_URL=https://3001-${GITPOD_WORKSPACE_URL:8}" >> .env && 
         pipenv install &&
-        psql -U gitpod -c 'CREATE DATABASE ODS;' &&
-        psql -U gitpod -c 'CREATE EXTENSION unaccent;' -d ODS &&
+        psql -U gitpod -c 'CREATE DATABASE ods;' &&
+        psql -U gitpod -c 'CREATE EXTENSION unaccent;' -d ods &&
         pipenv run init && 
         pipenv run migrate && 
         pipenv run upgrade &&

@@ -1,7 +1,8 @@
 rm -R -f ./migrations &&
 pipenv run init &&
-psql -U gitpod -c 'DROP DATABASE ODS;' || true &&
-psql -U gitpod -c 'CREATE DATABASE ODS;' &&
-psql -U gitpod -c 'CREATE EXTENSION unaccent;' -d ODS &&
+psql -U gitpod -c 'DROP DATABASE ods;' || true &&
+psql -U gitpod -c 'CREATE DATABASE ods;' &&
+psql -U gitpod -c 'CREATE EXTENSION unaccent;' -d ods &&
 pipenv run migrate &&
-pipenv run upgrade
+pipenv run upgrade &&
+pipenv run start
