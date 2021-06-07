@@ -1,6 +1,7 @@
 // libreary imports
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ScrollToTop } from 'react-router-scroll-to-top';
 
 // import app pages Start
 
@@ -8,7 +9,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import injectContext from "./store/appContext";
 
 // import app components Start
-import ScrollToTop from "./component/scrolltotop/scrollToTop";
 
 
 const Layout = () => {
@@ -19,7 +19,7 @@ const Layout = () => {
 	return (
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter basename={basename}>
-				<ScrollToTop>
+			<ScrollToTop />
 					<Switch>
 						{
 						/* 
@@ -34,7 +34,6 @@ const Layout = () => {
 						*/
 						}
 					</Switch>
-				</ScrollToTop>
 			</BrowserRouter>
 		</div>
 	);
