@@ -31,7 +31,7 @@ module.exports = merge(common, {
             tabWidth: 4,                // Specify the number of spaces per indentation-level.
             useTabs: true,              // Indent lines with tabs instead of spaces.
             bracketSpacing: true,
-            extensions: [ ".js", ".jsx" ],
+            extensions: [ ".js", ".jsx",".tsx",".ts" ],
             jsxBracketSameLine: true,
             semi: true,                 // Print semicolons at the ends of statements.
             encoding: 'utf-8'           // Which encoding scheme to use on files
